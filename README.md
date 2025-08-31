@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Data Science & Analytics Projects</title>
-</head>
+
 <body>
 
 <h1>📊 Data Science & Analytics Projects</h1>
@@ -93,3 +90,4 @@ Computer Science | Python Dev | Data Enthusiast<br>
 
 </body>
 </html>
+
