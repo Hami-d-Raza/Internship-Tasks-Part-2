@@ -1,116 +1,95 @@
-# 📊 Data Science & Analytics Projects  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Science & Analytics Projects</title>
+</head>
+<body>
 
-This repository contains **three end-to-end data projects** built using Python, Scikit-learn, Streamlit, and visualization libraries.  
+<h1>📊 Data Science & Analytics Projects</h1>
 
-1. **Term Deposit Subscription Prediction (Supervised ML – Classification)**  
-2. **Customer Segmentation Using Unsupervised Learning (Clustering)**  
-3. **Interactive Business Dashboard in Streamlit (Visualization & Analytics)**  
+<p>Welcome to my <strong>Data Science & Analytics Projects</strong> repository! This project contains a series of end-to-end machine learning and analytics tasks involving <strong>Classification</strong>, <strong>Clustering</strong>, and <strong>Interactive Visualization Dashboards</strong> using Python.</p>
 
-Each project demonstrates real-world **data handling, preprocessing, modeling, visualization, and business insights**.  
+<blockquote>
+  <p><strong>Main Focus</strong>: Real-world data handling, preprocessing, modeling, visualization, and business insights across banking, retail, and sales analytics.</p>
+</blockquote>
 
----
+<hr>
 
-## 🔹 Project 1: Term Deposit Subscription Prediction (Bank Marketing)
+<h2>📁 Repository Structure</h2>
 
-### 📌 Objective
-Predict whether a bank customer will subscribe to a **term deposit** using demographic and marketing campaign features.  
+<p>This repository contains the following projects, each placed in a separate file with its own implementation:</p>
 
-### ⚙️ Workflow
-- **Data Handling**  
-  - Robust CSV path handling (auto-detects dataset).  
-  - Target (`y`) mapped from `yes/no → 1/0`.  
-  - One-hot encoding for categorical variables.  
+<h3>🔹 <a href="./term_deposit_prediction.py">Project 1 – Term Deposit Subscription Prediction</a></h3>
+<ul>
+  <li><strong>Objective:</strong> Predict whether a bank customer will subscribe to a term deposit.</li>
+  <li><strong>Techniques Used:</strong> Logistic Regression, Random Forest Classifier.</li>
+  <li><strong>Workflow:</strong> Data preprocessing (encoding, mapping, CSV handling), feature explainability with SHAP, and evaluation (Confusion Matrix, ROC, F1-Score).</li>
+  <li><strong>Outcome:</strong> Robust classification with explainability for business decisions.</li>
+</ul>
 
-- **Models Used**  
-  - Logistic Regression  
-  - Random Forest Classifier  
+<h3>🔹 <a href="./customer_segmentation.py">Project 2 – Customer Segmentation</a></h3>
+<ul>
+  <li><strong>Objective:</strong> Segment mall customers based on income and spending habits.</li>
+  <li><strong>Techniques Used:</strong> Standardization, Elbow Method, K-Means Clustering, PCA, t-SNE.</li>
+  <li><strong>Workflow:</strong> EDA (age, gender, spending patterns), visualization, cluster formation, and strategic business insights.</li>
+  <li><strong>Outcome:</strong> Clear customer segments with actionable marketing strategies (budget shoppers, luxury seekers, trendsetters, etc.).</li>
+</ul>
 
-- **Evaluation**  
-  - Confusion Matrix & Classification Report  
-  - F1-Score  
-  - ROC Curve with AUC comparison  
+<h3>🔹 <a href="./business_dashboard.py">Project 3 – Interactive Business Dashboard</a></h3>
+<ul>
+  <li><strong>Objective:</strong> Build an interactive Streamlit dashboard for analyzing global superstore sales and profit.</li>
+  <li><strong>Features:</strong> Sidebar filters, auto-updated KPIs, interactive Plotly visualizations, raw data explorer.</li>
+  <li><strong>Outcome:</strong> Business-ready dashboard enabling data-driven decisions across regions and categories.</li>
+</ul>
 
-- **Explainability**  
-  - SHAP values for feature importance & local predictions.  
+<hr>
 
-### ▶️ Run Script
-```bash
-python term_deposit_prediction.py
-🔹 Project 2: Customer Segmentation (Mall Customers Dataset)
-📌 Objective
-Cluster mall customers based on spending habits and propose marketing strategies for each segment.
+<h2>🧰 Technologies Used</h2>
+<ul>
+  <li>Python</li>
+  <li>Pandas, NumPy</li>
+  <li>Matplotlib, Seaborn, Plotly</li>
+  <li>Scikit-learn</li>
+  <li>SHAP</li>
+  <li>Streamlit</li>
+</ul>
 
-⚙️ Workflow
-EDA: Gender distribution, Age vs Spending, Income vs Spending.
+<hr>
 
-Preprocessing: Standardization of features (Annual Income, Spending Score).
+<h2>📌 Key Skills Demonstrated</h2>
+<ul>
+  <li>Data Cleaning and Preprocessing</li>
+  <li>Exploratory Data Analysis (EDA)</li>
+  <li>Supervised Learning (Classification)</li>
+  <li>Unsupervised Learning (Clustering)</li>
+  <li>Feature Explainability (SHAP)</li>
+  <li>Visualization and Dashboard Development</li>
+</ul>
 
-Clustering:
+<hr>
 
-Elbow Method for optimal clusters.
+<h2>📄 How to Explore</h2>
+<p>Each script can be run independently:</p>
 
-Final clustering with K=5.
-
-Visualization:
-
-PCA (2D linear visualization).
-
-t-SNE (2D non-linear visualization).
-
-Business Insights: Marketing strategies tailored for budget shoppers, luxury seekers, trendsetters, etc.
-
-▶️ Run Script
-bash
-Copy code
+<pre><code>python term_deposit_prediction.py
 python customer_segmentation.py
-🔹 Project 3: Interactive Business Dashboard (Global Superstore Dataset)
-📌 Objective
-Develop an interactive Streamlit dashboard to analyze sales, profit, and performance across customer segments.
-
-⚙️ Features
-Sidebar Filters: Region, Category, Sub-Category
-
-KPIs: Total Sales & Total Profit (auto-updated on filters)
-
-Interactive Visualizations (Plotly):
-
-Sales by Category
-
-Profit by Region
-
-Top 5 Customers by Sales
-
-Monthly Sales & Profit Trends
-
-Raw Data Explorer (expandable table).
-
-▶️ Run Script
-bash
-Copy code
 streamlit run business_dashboard.py
-📂 Project Structure
-bash
-Copy code
-📁 DS_Tasks
- ┣ 📜 term_deposit_prediction.py     # Project 1: Classification
- ┣ 📜 customer_segmentation.py       # Project 2: Clustering
- ┣ 📜 business_dashboard.py          # Project 3: Dashboard
- ┣ 📊 bank_Dataset.csv               # Dataset 1
- ┣ 📊 Mall_Customers.csv             # Dataset 2
- ┣ 📊 Global_Superstore2.csv         # Dataset 3
- ┗ 📜 README.md                      # Documentation
-🛠️ Requirements
-Install all dependencies before running scripts:
+</code></pre>
 
-bash
-Copy code
-pip install pandas matplotlib seaborn scikit-learn shap plotly streamlit
-📌 Notes
-SHAP Visualizations (Project 1) → best viewed in Jupyter Notebook or Google Colab.
+<p>Datasets are provided in the repository for reproducibility.</p>
 
-Streamlit Dashboard (Project 3) → run in terminal with:
+<hr>
 
-bash
-Copy code
-streamlit run business_dashboard.py
-Place datasets in the correct folder (DS_Tasks 2/).
+<h2>🤝 Acknowledgments</h2>
+<p>This repository demonstrates applied data science and analytics skills through practical end-to-end projects.</p>
+
+<hr>
+
+<h2>🙌 Author</h2>
+<p><strong>Muhammad Hamid Raza</strong><br>
+Computer Science | Python Dev | Data Enthusiast<br>
+📧 Email: hamidraza9182@gmail.com</p>
+
+</body>
+</html>
